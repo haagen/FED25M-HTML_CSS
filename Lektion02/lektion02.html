@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv"> <!-- Här startar HTML-dokumentet -->
+<!-- Vi kan skapa HTML-kommentarer på detta sättet -->
+<!-- 
+    En kommentar kan täcka flera
+    rader. Men den måste avslutas. 
+--> 
+<!--
+    Det är viktigt att veta att en kommentar syns
+    i webbläsaren. Dvs det du skriver är synligt av
+    besökaren. 
+-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML & CSS: Lektion 2 - Grunderna i HTML</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            /*
+                Här kan jag skriva en kommentar i CSS. 
+            */
+        </style>
+        <script src="js/script.js"></script>
+        <script>
+            /*
+                Här kan jag skriva en kommentar i JavaScript. 
+            */
+        </script>
+    </head>
+    <body>
+        
+        <h1>Lektion 02 - Grunderna i HTML (huvudrubrik)</h1>
+        <h2 id="rubrik2">Rubrik 2</h2>
+        <h3>Rubrik 3</h3>
+        <h4>Rubrik 4</h4>
+        <h5>Rubrik 5</h5>
+        <h6>Rubrik 6</h6>
+
+        <p>
+            h1 - "bokens" titel<br>
+            h2 - är ett kapitel<br>
+            h3 - är en sektion i kapitlet 
+        </p>
+        <!--
+            p - är en paragraf och betyder ett stycke text. Används för att stycke
+                indela text, inte för att skapa design. 
+            br - är en radbrytninig. Används för att radbryta text, inte skapa nya 
+                stycken eller skapa design. Ser man två br-taggar efter varandra 
+                är det genrellt felanvänt! 
+        -->
+        <p>
+            - Du får "syntaktiskt" ha mer än en h1-tag. Men det är inte
+            rekommenderat - då påverkar hur sökmotorerna indexerar
+            sidan (SEO).<br>
+            - Undvik "hål" i rubrik hierarkin. Navigation kan påverkas 
+            och det kan påverka indexering och hur sökresultat visas.<br>
+            - Nästla (stoppa en hX-tag i en annan hX-tag)<br>
+            - Struktur, inte utseende. Om syftet "bara" är att få en text 
+            som är ser ut på ett speciellt sätt - använd t.ex. en 
+            &lt;span&gt;-tag istället.
+        </p>                
+
+        <h2>Specialtecken</h2>
+        <p>
+            Skyddade tecken: &gt;, &lt;, &amp;, &apos; och &quot; <br>
+            Andra tecken: &hearts;, &clubs;, &diams; och &spades;<br>
+            En lista kan hittas <a href="https://www.html.am/reference/html-special-characters.cfm">här</a>. 
+        </p>
+
+        <h2>Länkar</h2>
+        <p>
+            Öppnar en annan sida. Exempel:<br>
+            <a href="https://www.google.se">Länk till Google</a><br>
+            <a href="#rubrik2">Länk till Rubrik 2</a>
+        </p>
+
+        <p>Detta är ett blockelement</p>
+
+        <div>
+            <p>Detta är ett annat blockelement.</p>
+            <p>
+                - börjar på ny rad<br>
+                - ibland har de padding (utrymme runt sig)<br>
+                - tar hela bredden<br>
+                - du kan "styla om dem" - bredd och höjd (med css)<br>
+            </p>
+            <p>
+                Lorem ipsum, <strong>dolor</strong> sit <b>amet</b> consectetur adipisicing elit. Modi
+                impedit <em>ullam</em> quos <i>blanditiis</i> pariatur! Sit <span style="color: red">fugit qui</span> dolorum 
+                sint cumque?
+            </p>
+        </div>
+
+    </body>
+</html>
