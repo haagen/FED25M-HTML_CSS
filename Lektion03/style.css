@@ -1,0 +1,56 @@
+
+.green {
+    color: lightseagreen;
+}
+
+.pink {
+    color: lightsalmon;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+#mittBlock {
+    background-color: lightblue;
+    text-align:center;
+    padding: 10px 0 10px 0;
+    color: white;
+}
+
+div > p {
+    font-size: 30px;
+}
+
+p + p {
+    text-indent: 30px;
+}
+
+.link {
+    background-color: lightskyblue;
+}
+
+.link:hover {
+    background-color: lightsalmon;
+}
+
+a:link {
+    color: seagreen;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:active {
+    color: darkred;
+}
+
+a {
+    color: yellow;
+}
+
+p:nth-of-type(2) {
+    font-weight: 700;
+    font-style: italic;
+}
