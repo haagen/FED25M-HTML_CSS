@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS: Lektion 4 - Boxmodellen</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+    </style>
 </head>
 <body style="padding: 0; margin: 0;">
 
@@ -52,8 +59,42 @@
 
     <h2>Layout medhjälp av float</h2>
 
+    <!-- parent -->
+    <div style="
+        background-color: lightcyan;
+        width: 100%;
+        max-width: 800px;
+        height: 300px;
+        margin: 0 auto 100px auto;
+    ">
 
-    
+        <!-- Child 1 -->
+        <div style="
+            background-color: lightsalmon;
+            width: 25%;
+            height: 100%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        ">
+            Child 1
+        </div>
+
+        <!-- Child 2 -->
+        <div style="
+            background-color: lightseagreen;
+            width: 75%;
+            height: 100%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        ">
+            Child 2
+        </div>
+
+    </div>
+
+
 
 </body>
 </html>
