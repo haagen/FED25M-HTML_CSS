@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS: Lektion 4 - Boxmodellen</title>
+</head>
+<body style="padding: 0; margin: 0;">
+
+    <h1>HTML & CSS: Lektion 4 - Boxmodellen</h1>
+
+    <div style="
+        background-color: lightcoral;
+        padding: 20px 30px 20px 30px;
+        border: 1px solid lightseagreen;
+        margin: 0px 100px 0px 100px;
+    ">
+        <p>Detta är min box!</p>
+    </div>
+    
+    <h2>Layout medhjälp av inline-block</h2>
+    <!-- parent -->
+    <div style="
+        background-color: lightcyan;
+        margin: 100px auto 100px auto;
+        /* width: 600px; */
+        width: 100%;
+        max-width: 600px;
+        height: 500px;
+    ">
+        <!-- child 1 -->
+         <div style="
+            background-color: lightseagreen;
+            display: inline-block;
+            /* width: 150px; */
+            width: 25%;
+            height: 100%;
+         ">
+            Child 1 
+        </div>
+        <!-- child 2 -->
+         <div style="
+            background-color: lightsalmon;
+            display: inline-block;
+            /* width: 445px; */
+            width: 73%;
+            height: 100%;
+         ">
+            Child 2
+        </div>
+    </div>
+
+    <h2>Layout medhjälp av float</h2>
+
+
+    
+
+</body>
+</html>

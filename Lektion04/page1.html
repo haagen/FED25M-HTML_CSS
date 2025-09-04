@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS: Lektion 4 - Bilder, Media och Listor</title>
+    <style>
+        .testImg {
+            width: 20%;
+        }
+        figcaption {
+            font-style: italic;
+        }
+
+        .nonBlock, .nonBlock li {
+            display: inline;
+        }
+
+        dt {
+            font-weight: 700;
+            
+        }
+
+        dd {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 5px; 
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML & CSS: Lektion 4 - Bilder, Media och Listor</h1>
+
+    <h2>Bilder</h2>
+
+    <p>
+        <img src="img/photo.jpeg" alt="Ett fotografi på Martin med en Gummi Anka">
+    </p>
+
+    <p>
+        <img
+            src="img/photo.jpeg"
+            alt="Ett fotografi på Martin med en Gummi Anka"
+            width="100"
+            height="20"
+        >
+        Bilden är nu "skrev" och visas med fel proportioner - så skall vi inte göra. 
+    </p>
+
+    <p>
+        <img
+            src="img/photo.jpeg"
+            alt="Ett fotografi på Martin med en Gummi Anka"
+            class="testImg"
+        >
+        Vi kan kontrollera bilden med hjälp av css. 
+    </p>
+
+    <figure>
+        <img src="img/photo.jpeg" alt="Ett fotografi på Martin med en Gummi Anka">
+        <figcaption>Porträttbild på Martin med en gummianka</figcaption>
+    </figure>
+
+    <h2>Media</h2>
+
+    <h3>Video</h3>
+
+    <video controls> <!-- autoplay width="" height="" -->
+        <source src="video/video.mp4" type="video/mp4">
+        <p>
+            Din webbläsare har inte stöd för videoklippet.
+        </p>
+    </video>
+
+    <h3>Ljud</h3>
+
+    <audio controls> <!-- autoplay -->
+        <source src="audio/audio.mp3" type="audio/mp3">
+        <p>
+            Din webbläsare har inte stöd för ljudklippet.
+        </p>
+    </audio>
+    
+    <h3>Inbäddad video från YouTube</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JFjDc1Qeaa8?si=AQB6_YFKpt5qYBMl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <h3>Objekt</h3>
+
+    <object data="data/02 - HTML och CSS.pdf" type="application/pdf"> <!-- height="" width="" -->
+        <p>
+            Din webbläsare har inte stöd för visning av PDF-filer. 
+        </p>
+    </object>
+
+    <h2>Listor</h2>
+
+    <h3>Sorterade listor</h3>
+
+    <ol> <!-- type="I" reversed start="13" -->
+        <li>Vårt första element</li>
+        <li>Vårt andra element</li>
+    </ol>
+
+    <h3>Osorterad lista</h3>
+
+    <ul>
+        <li>Min första punkt</li>
+        <li>Min andra punkt</li>
+        <li>
+            <ul>
+                <li>Min första nästlade punkt</li>
+                <li>Min andra nästlade punkt</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="nonBlock">
+        <li><a href="#">Element 1</a></li>
+        <li><a href="#">Element 2</a></li>
+    </ul>
+
+    <h3>Beskrivande lista</h3>
+
+    <p>Här kommer en FAQ</p>
+
+    <dl>
+        <dt>Hur mycket väger hunden?</dt>
+        <dd>Hunden väger 17kg</dd>
+
+        <dt>Hur gammal är hunden?</dt>
+        <dd>Hunden är 5 år gammal</dd>
+    </dl>
+
+</body>
+</html>
