@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS - Lektion 5 - CSS Variabler</title>
+    <style>
+
+        :root {
+            --primary-color: lightseagreen;
+            --heading-font: Times, serif;
+            --main-font: Verdana, sans-serif;
+            --magic-width: 600px;
+        }
+
+        * {
+            font-family: var(--main-font);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--heading-font);
+        }
+
+        p {
+            max-width: var(--magic-width);
+        }
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        .highlight {
+            color: var(--secondary-color, lime);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML & CSS - Lektion 5 - CSS Variabler</h1>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque animi iste tenetur saepe cum architecto cumque iure tempora? Autem non excepturi quidem aliquam illum.
+    </p>
+
+    <p class="highlight">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo omnis minima eveniet, sapiente consequuntur excepturi sit incidunt voluptatibus magnam! Aliquid fugiat non nemo.
+    </p>
+    
+</body>
+</html>
