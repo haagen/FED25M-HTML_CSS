@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS : Lektion 6 - Formulär</title>
+    <style>
+
+        label {
+            display: block;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+        }
+
+        input[type="button"],input[type="submit"],button {
+            width: 200px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .btnBuy {
+            background-color: red;
+            border: 2px solid darkred;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .btnNoBuy {
+            background-color: white;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>HTML & CSS : Lektion 6 - Formulär</h1>
+    
+    <!-- action method -->
+    <form>
+
+        <label for="model">Bilmärke</label>
+        <input type="text" name="model" id="model" value="Suzuki">
+
+        <label>
+            Lösenord
+            <input type="password" name="password" id="password">
+        </label>
+
+        <label for="message">Meddelande</label>
+        <textarea id="message" name="message"></textarea>
+
+        <label for="color">Färg</label>
+        <select id="color" name="color">
+            <option value="red">Röd</option>
+            <option value="green">Grön</option>
+            <option value="blue">Blå</option>
+            <option value="lightseagreen" selected>Ljushavsgrön</option>
+        </select>
+
+        <label for="t_and_cs">Allmännavilkor</label>
+        <input type="checkbox" id="t_and_cs" name="t_and_cs" checked>
+
+        <label for="product1">iPhone</label> 
+            <input type="radio" name="product" id="product1" value="iPhone"> 
+        <label for="product2">iPhone Air</label> 
+            <input type="radio" name="product" id="product2" value="iPhone Air">
+        <label for="product3">iPhone Pro</label>
+            <input type="radio" name="product" id="product3" value="iPhone Pro">
+
+
+        <input type="submit" value="Köp" class="btnBuy">
+        <input type="button" value="Köp inte" class="btnNoBuy">
+        <button>
+            Tryck på <strong>mig</strong>!
+            <img src="horse-1911400_640.jpg" width="100">
+        </button>            
+
+    </form>
+
+    <hr>
+
+    <form action="https://www.google.com/search">
+
+        <label for="query">Söksträng</label>
+        <input type="text" name="q" id="query" placeholder="Sök...">
+        <input type="submit" value="Sök">
+
+    </form>
+
+
+
+</body>
+</html>
