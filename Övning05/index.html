@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Övningsuppgift Lektion 5 - Kattrescue</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd0728a671.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigations meny i en egen container -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kattrescue</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Hem</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Våra katter</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Donera</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Om Oss</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+    </div>
+
+    <!-- En karusell i en egen container -->
+    <div class="container pt-3 pb-3">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/cat-1192026_640.jpg" class="d-block w-100" alt="Katt 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/cat-1647775_640.jpg" class="d-block w-100" alt="Katt 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/cat-323262_640.jpg" class="d-block w-100" alt="Katt 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/cat-8197577_640.jpg" class="d-block w-100" alt="Katt 4">
+                </div>                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <section class="col-12 col-md-6">   <!-- kontaktform -->
+                <h2>Kontakta oss</h2>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Epost</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="meddelande" class="form-label">Meddelande</label>
+                    <textarea class="form-control" id="meddelande" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-success">Skicka</button>
+                </div>                
+            </section>
+            <div class="col-12 col-md-6">   <!-- bild -->
+                <img src="assets/tree-736877_640.jpg" alt="..." class="w-100">
+            </div>
+        </div>
+    </div>
+
+    <footer class="container pt-5 pb-3">
+        <div class="row">
+            <div class="col text-end">
+                <i class="fa-solid fa-house text-success"></i> Kattvägen 12, Ludvigsborg
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-phone text-danger"></i> <a href="tel:+46 413 763 90">+46 413 763 90</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
