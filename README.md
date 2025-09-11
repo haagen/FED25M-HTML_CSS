@@ -15,3 +15,6 @@ Kursrepo för FED25M i kursen HTML och CSS hösten 2025
 
 - [Övning 1](Övning01/)
 - [Övning 2](Övning02/)
+- [Övning 3](Övning03/)
+- [Övning 4](Övning04/)
+- [Övning 5](Övning05/)
