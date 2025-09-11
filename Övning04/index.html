@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Övningsuppgift Lektion 4</title>
+    <style>
+        /*
+
+            Om box-sizing: content-box (default)
+
+            width = bredden på innehållet
+
+            Om box-sizing: border-box
+
+            width = bredden på innehållet + padding
+
+            Bra att använda om man arbetar med procentuella storlekar. 
+
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        article {
+            padding-bottom: 10px;
+            clear: both;
+        }
+
+        article div {
+            float: left;
+            width: 60%;
+            padding-right: 10px;
+        }
+
+        article figure, article video {
+            float: left;
+            width: 40%;
+        }
+
+        figure {
+            margin: 0px;
+        }
+
+        img {
+            width: 100%;
+            padding-top: 10px;
+        }
+
+        video {
+            padding-top: 10px;
+        }
+
+        h2 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1>Övningsuppgift Lektion 4</h1>
+
+        <article>
+            <div>
+                <h2>Flugfiskarens liv och leverne</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore 
+                    minus numquam voluptates quibusdam tempora nostrum. Impedit molestias 
+                    optio similique necessitatibus distinctio sint, maiores reiciendis. 
+                    Maxime!
+                </p>
+            </div>
+            <figure>            
+                <img src="assets/fish-33712_640.png" alt="En grön fisk med två stora tänder som ser konfunderad ut.">
+                <figcaption>Storgäddan som jag drömmer om att fånga</figcaption>
+            </figure>
+        </article> 
+
+        <article>
+            <div>
+                <h2>Fiskevideo</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, consequatur?
+                </p>
+                <h3>Viktiga fiske egenskaper</h3>
+                <ul>
+                    <li>Blåa</li>
+                    <li>Slemmiga</li>
+                    <li>Bor i havet</li>
+                </ul>
+            </div>
+            <video controls autoplay>
+                <source src="assets/1436-147170152_tiny.mp4" type="video/mp4">
+                <p>
+                    Din webbläsare kan inte visa videon. 
+                </p>
+            </video>
+        </article>
+
+    </main>
+</body>
+</html>
