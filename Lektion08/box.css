@@ -1,0 +1,53 @@
+
+#static {
+    background-color: lightpink;
+    width: 200px;
+}
+
+#relative {
+    background-color: lightcyan;
+    width: 200px;
+
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+
+#absolut {
+    background-color: blue;
+    color: white;
+
+    height: 150px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+#fixed {
+    background-color: aqua;
+    position: fixed;
+    top: 200px;
+    left: 100px;
+    right: 100px;
+    text-align: center;
+
+}
+
+#sticky {
+    background-color: lemonchiffon;
+    position: sticky;
+    top: 0px;
+    left: 0px; 
+    right: 0px;
+    z-index: 1;
+}
+
+.spacer {
+    height: 2000px;
+}
+
+.newdiv {
+    background-color: aquamarine;
+}
