@@ -1,0 +1,49 @@
+
+body {
+    display: grid;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px; 
+    
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 1fr 3fr 1fr;
+    
+    /*
+    grid-template-columns: 67% 33%; 
+    grid-template-rows: 20% 60% 20%; 
+    */
+    grid-template-areas: 
+        "nav nav"           /* använd . för "tom"-cell */
+        "main aside"
+        "footer footer";
+
+    gap: 10px;  /* gap ingår i fr mått, men inte i pixel/procentmått eller liknande */ 
+}
+
+nav {
+    background-color: lightseagreen;
+    /*
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    */
+    grid-area: nav;
+}
+
+main {
+    background-color: lightblue;
+    grid-area: main;
+}
+
+footer {
+    background-color: lightcoral;
+    /*
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    */
+    grid-area: footer;
+}
+
+aside {
+    background-color: orange;
+    grid-area: aside;
+}
