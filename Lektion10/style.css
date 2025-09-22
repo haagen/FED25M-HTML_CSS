@@ -1,0 +1,75 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
+
+
+@font-face {
+    font-family: "Fuggles";
+    src: url('Fuggles/Fuggles-Regular.ttf');
+}
+
+
+.mysteryColor1 {
+    background-color: #FFA07A;
+}
+
+.mysteryColor2 {
+    background-color: rgb(144, 238, 144);
+}
+
+.mysteryColor3 {
+    background-color: hsl(234,56%,78%);
+}
+
+#childBox1, #childBox2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+#childBox1 {
+    background-color: hsl(234,56%,78%);
+}
+
+#childBox2 {
+    background-color: rgb(144, 238, 144);
+    top: -25px;
+    opacity: 0.5;
+}
+
+.spacer {
+    height: 500px;
+    background-color: #DDDDDD;
+}
+
+#backgroundDiv {
+    background-image: url('jeep.jpeg');
+    height: 400px;
+    width: 800px;
+
+    background-color: lightseagreen;
+    /*
+    cover, contain, <no> <no>, auto
+    */
+    background-size: contain;
+    /*
+        repeat, no-repeat, repeat-x, repeat-y
+    */
+    background-repeat: repeat-x;
+    /*
+        bottom, top, center, <no>
+    */
+    background-position: center;
+    /*
+        scroll, fixed, local
+    */
+    background-attachment: fixed;
+}
+
+.fuggles {
+    font-family: "Fuggles";
+    font-size: 34px;
+}
+
+.ubuntu {
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
