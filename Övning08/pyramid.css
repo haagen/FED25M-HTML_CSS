@@ -1,0 +1,37 @@
+div {
+    position: absolute;
+}
+
+#b1 {
+    background-color: lightseagreen;
+/*     width: 80vw;
+    height: 80vh; */
+    left: 10vw;
+    right: 10vw;
+    top: 10vh;
+    bottom: 10vh;
+}
+
+#b2 {
+    background-color: lightsalmon;
+    left: 20vw;
+    right: 20vw;
+    top: 20vh;
+    bottom: 20vh;    
+}
+
+#b3 {
+    background-color: lightblue;
+    left: 30vw;
+    right: 30vw;
+    top: 30vh;
+    bottom: 30vh;     
+}
+
+#b4 {
+    background-color: lightgoldenrodyellow;
+    left: 40vw;
+    right: 40vw;
+    top: 40vh;
+    bottom: 40vh;     
+}
