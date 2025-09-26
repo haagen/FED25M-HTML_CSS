@@ -1,0 +1,68 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    max-width: 800px;
+}
+
+h1 {
+    color: lightseagreen;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;    
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-image: url('img/books1.jpg');
+    background-size: cover;
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+article {
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 500px) {
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100%;
+        /* 
+            Det går att byta bild till en som passar bättre
+            i desktopläget i mediafrågorna.
+        */
+        background-image: url('img/books2.jpg');
+    }
+
+    article {
+        width: 49%;
+    }
+}
